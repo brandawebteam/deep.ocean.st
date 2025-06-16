@@ -1,0 +1,71 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_pages",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "about-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_title": {
+      "type": "string"
+    },
+    "hero_description": {
+      "type": "text"
+    },
+    "story_title": {
+      "type": "string"
+    },
+    "story_content": {
+      "type": "blocks"
+    },
+    "values_title": {
+      "type": "string"
+    },
+    "approach_title": {
+      "type": "string"
+    },
+    "community_title": {
+      "type": "string"
+    },
+    "community_description": {
+      "type": "text"
+    },
+    "careers_title": {
+      "type": "string"
+    },
+    "careers_description": {
+      "type": "text"
+    },
+    "careers_button_text": {
+      "type": "string"
+    },
+    "careers_button_link": {
+      "type": "string"
+    },
+    "story_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "values": {
+      "type": "component",
+      "component": "shared.values",
+      "repeatable": true
+    },
+    "approaches": {
+      "type": "component",
+      "component": "shared.approaches",
+      "repeatable": true
+    }
+  }
+}

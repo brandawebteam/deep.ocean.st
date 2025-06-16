@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "project"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "fullDescription": {
+      "type": "text"
+    },
+    "tag": {
+      "type": "enumeration",
+      "enum": [
+        "Released",
+        "Coming Soon",
+        "In Development",
+        "Alpha",
+        "Beta"
+      ]
+    },
+    "releaseDate": {
+      "type": "date"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "video": {
+      "type": "string"
+    },
+    "features": {
+      "type": "component",
+      "component": "features.features",
+      "repeatable": true
+    },
+    "link": {
+      "type": "component",
+      "component": "link.link",
+      "repeatable": false
+    },
+    "platforms": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "developer": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    }
+  }
+}

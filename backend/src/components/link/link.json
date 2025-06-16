@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_link_links",
+  "info": {
+    "displayName": "link"
+  },
+  "options": {},
+  "attributes": {
+    "steam": {
+      "type": "string"
+    },
+    "epicGames": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

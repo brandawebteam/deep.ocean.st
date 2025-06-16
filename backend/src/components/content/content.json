@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_content_contents",
+  "info": {
+    "displayName": "content"
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "string"
+    },
+    "theses": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

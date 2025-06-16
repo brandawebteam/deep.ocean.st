@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "contactMail": {
+      "type": "string"
+    },
+    "contactDiscord": {
+      "type": "string"
+    },
+    "showAboutPage": {
+      "type": "boolean"
+    },
+    "showNewsPage": {
+      "type": "boolean"
+    },
+    "showProjectsPage": {
+      "type": "boolean"
+    },
+    "ShowCareersPage": {
+      "type": "boolean"
+    }
+  }
+}

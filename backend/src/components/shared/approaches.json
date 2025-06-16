@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_approaches",
+  "info": {
+    "displayName": "approaches"
+  },
+  "options": {},
+  "attributes": {
+    "step": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
