@@ -14,8 +14,8 @@ const raleway = Raleway({
 })
 
 export const metadata: Metadata = {
-  title: "Nexus Games | Indie Game Studio",
-  description: "Creating immersive gaming experiences that push the boundaries of imagination."
+  title: "DeepOcean Studio",
+  description: "Enjoy an interesting gaming experience and immerse yourself in our unique worlds with us."
 }
 
 export default function RootLayout({
