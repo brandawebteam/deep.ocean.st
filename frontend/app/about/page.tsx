@@ -40,7 +40,7 @@ interface AboutPageData {
 }
 
 export default async function AboutPage() {
-  const aboutData : AboutPageData = await fetchApiData('about-page')
+  const aboutData: AboutPageData = await fetchApiData('about-page')
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -66,15 +66,14 @@ export default async function AboutPage() {
 
         <div className="relative aspect-square overflow-hidden rounded-lg">
           <Image
-            src={`${
-              aboutData.story_image === null
+            src={`${aboutData.story_image === null
                 ? "/placeholder.svg?height=800&width=800"
                 : process.env.NEXT_PUBLIC_STRAPI_API_URL + aboutData.story_image.url
-            }`}
-            alt={`${aboutData.story_image === null 
-                ? "About us"
-                : process.env.NEXT_PUBLIC_STRAPI_API_URL + aboutData.story_image.alternativeText
-            }`}
+              }`}
+            alt={`${aboutData.story_image === null
+              ? "About us"
+              : process.env.NEXT_PUBLIC_STRAPI_API_URL + aboutData.story_image.alternativeText
+              }`}
             fill
             className="object-cover"
           />
