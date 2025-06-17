@@ -4,7 +4,8 @@ export async function fetchApiData(name: string): Promise<any> {
   const res = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/${name}?populate=*`, {
     headers: {
       Authorization: `bearer ${process.env.NEXT_PUBLIC_STRAPI_API_TOKEN}`,
-    }
+    },
+    cache: 'no-store'
   })
   console.log(res)
 
