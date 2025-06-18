@@ -35,12 +35,12 @@ export default async function Home() {
   return (
     <>
       {/* Hero Section with new animated background */}
-      <section className="relative flex w-screen sm:min-h-[70dvh] items-center justify-center overflow-hidden bg-muted hero-pattern animated-gradient-bg">
+      <section className="relative flex w-screen min-h-[70dvh] items-center justify-center overflow-hidden bg-muted hero-pattern animated-gradient-bg">
         <div className="absolute inset-0 z-0 opacity-30 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/20 via-background to-background"></div>
         <div className="container relative z-10 mx-auto px-4 text-center">
           <AnimateIn direction="down" duration={800}>
-            <div className="mx-auto mb-8 max-w-[300px]">
-              <Logo size="large" className="w-auto h-auto" />
+            <div className="mx-auto mb-6 max-w-[160px] sm:max-w-[300px]">
+              <Logo size="large" className="mx-auto" />
             </div>
           </AnimateIn>
 

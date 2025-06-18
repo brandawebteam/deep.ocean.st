@@ -92,3 +92,9 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.hero {
+  min-height: 70vh;
+  min-height: 70svh;
+  min-height: 70dvh;
+}

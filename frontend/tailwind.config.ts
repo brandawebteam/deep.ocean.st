@@ -1,6 +1,10 @@
 import type { Config } from "tailwindcss"
 
 const config = {
+  safelist: [
+    'min-h-[70svh]',
+    'min-h-[70dvh]',
+  ],
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
