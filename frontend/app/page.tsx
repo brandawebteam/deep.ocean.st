@@ -40,7 +40,7 @@ export default async function Home() {
         <div className="container relative z-10 mx-auto px-4 text-center">
           <AnimateIn direction="down" duration={800}>
             <div className="mx-auto mb-8 max-w-[300px]">
-              <Logo size="large" className="mx-auto" />
+              <Logo size="large" className="w-full h-auto" />
             </div>
           </AnimateIn>
 
