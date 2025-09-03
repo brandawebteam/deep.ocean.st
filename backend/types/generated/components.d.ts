@@ -54,6 +54,22 @@ export interface SharedApproaches extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedSeo extends Struct.ComponentSchema {
+  collectionName: 'components_shared_seos';
+  info: {
+    description: '';
+    displayName: 'Seo';
+  };
+  attributes: {
+    canonicalUrl: Schema.Attribute.String;
+    description: Schema.Attribute.String;
+    noindex: Schema.Attribute.Boolean;
+    ogImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    ogUrl: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedValues extends Struct.ComponentSchema {
   collectionName: 'components_shared_values';
   info: {
@@ -81,6 +97,7 @@ declare module '@strapi/strapi' {
       'link.link': LinkLink;
       'links.links': LinksLinks;
       'shared.approaches': SharedApproaches;
+      'shared.seo': SharedSeo;
       'shared.values': SharedValues;
       'theses.theses': ThesesTheses;
     }

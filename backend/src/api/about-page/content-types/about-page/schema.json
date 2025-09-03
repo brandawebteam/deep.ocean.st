@@ -4,7 +4,8 @@
   "info": {
     "singularName": "about-page",
     "pluralName": "about-pages",
-    "displayName": "about-page"
+    "displayName": "About-page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -50,6 +51,7 @@
     "story_image": {
       "type": "media",
       "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
@@ -66,6 +68,11 @@
       "type": "component",
       "component": "shared.approaches",
       "repeatable": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }

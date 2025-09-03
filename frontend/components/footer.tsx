@@ -105,8 +105,8 @@ export default function Footer() {
             <address className="not-italic">
               <p className="text-sm text-muted-foreground">
                 Email:{" "}
-                <a href={footerSettings?.contactMail} className="hover-underline transition-colors duration-200">
-                  info@deepocean.games
+                <a href={"mailto:" + footerSettings?.contactMail} className="hover-underline transition-colors duration-200">
+                  {footerSettings?.contactMail}
                 </a>
               </p>
               <p className="mt-2 text-sm text-muted-foreground">
@@ -117,7 +117,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="hover-underline transition-colors duration-200"
                 >
-                  discord.gg/deepocean
+                  {footerSettings?.contactDiscord}
                 </a>
               </p>
             </address>

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "career",
     "pluralName": "careers",
-    "displayName": "career"
+    "displayName": "career",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -36,6 +37,11 @@
       "type": "component",
       "component": "content.content",
       "repeatable": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
     }
   }
 }

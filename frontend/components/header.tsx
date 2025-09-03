@@ -14,6 +14,8 @@ interface HeaderSettings {
   showCareersPage: boolean
 }
 
+
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)

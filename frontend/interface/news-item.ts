@@ -1,3 +1,5 @@
+import { SeoProps } from "./meta-data"
+
   export interface NewsItems {
   id: number
   title: string
@@ -9,4 +11,5 @@
     url: string
     alternativeText: string
   }
+  seo: SeoProps
 }

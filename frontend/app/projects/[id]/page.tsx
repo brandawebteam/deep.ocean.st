@@ -144,7 +144,7 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
 
 
         <TabsContent value="gallery">
-          <Gallery images={imagesArray} />
+          <Gallery images={imagesArray.map(img => img.url)} />
         </TabsContent>
         {featuresArray?.length >0 && (
         <TabsContent value="features">
@@ -164,7 +164,7 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
             </div>
             <div className="relative aspect-video overflow-hidden rounded-lg">
               {imagesArray.length > 0 && (
-                <Image src={imagesArray[0] || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
+                <Image src={imagesArray[0].url || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
               )}
             </div>
           </div>
