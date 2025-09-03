@@ -31,7 +31,7 @@ export default function NewsSlider({ news }: NewsSliderProps) {
         <div className="overflow-hidden rounded-lg shadow-xl gradient-border">
           <div className="relative aspect-[16/9] w-full">
             <Image
-              src={process.env.NEXT_PUBLIC_STRAPI_API_URL + news[currentIndex].image.url || "/placeholder.svg"}
+              src={news[currentIndex].image.url || "/placeholder.svg"}
               alt={news[currentIndex].image.alternativeText}
               fill
               className="object-cover transition-transform duration-700 hover:scale-105"

@@ -15,7 +15,7 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
 
   const featuresArray = project.features ? project.features : []
   
-  const imagesArray = project.images.map((image)=>process.env.NEXT_PUBLIC_STRAPI_API_URL + image.url);
+  const imagesArray = project.images;
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="mb-8">

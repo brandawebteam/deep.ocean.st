@@ -68,11 +68,11 @@ export default async function AboutPage() {
           <Image
             src={`${aboutData.story_image === null
                 ? "/placeholder.svg?height=800&width=800"
-                : process.env.NEXT_PUBLIC_STRAPI_API_URL + aboutData.story_image.url
+                : aboutData.story_image.url
               }`}
             alt={`${aboutData.story_image === null
               ? "About us"
-              : process.env.NEXT_PUBLIC_STRAPI_API_URL + aboutData.story_image.alternativeText
+              : aboutData.story_image.alternativeText
               }`}
             fill
             className="object-cover"

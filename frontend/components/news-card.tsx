@@ -15,7 +15,7 @@ export default function NewsCard({ news }: NewsCardProps) {
     <Card className="overflow-hidden transition-transform hover:scale-[1.02]">
       <Link href={`/news/${news.id}`}>
         <div className="relative aspect-video w-full">
-          <Image src={process.env.NEXT_PUBLIC_STRAPI_API_URL + news.image.url || "/placeholder.svg"} alt={news.title} fill className="object-cover" />
+          <Image src={news.image.url || "/placeholder.svg"} alt={news.title} fill className="object-cover" />
           <div className="absolute right-3 top-3">
             <Badge className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600">{news.tag}</Badge>
           </div>

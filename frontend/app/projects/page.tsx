@@ -16,7 +16,7 @@ export default async function ProjectsPage() {
         {projectsData.map((project) => {
       const firstImage =
          project.images && project.images.length > 0
-        ? process.env.NEXT_PUBLIC_STRAPI_API_URL + project.images[0].url
+        ? project.images[0].url
         : "/placeholder.svg?height=600&width=800";
 
           return (

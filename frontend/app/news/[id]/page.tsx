@@ -40,7 +40,7 @@ export default async function NewsDetailPage({ params }: { params: { id: string 
         <h1 className="mb-6 text-4xl font-bold tracking-tight">{news.title}</h1>
 
         <div className="relative mb-8 aspect-[16/9] w-full overflow-hidden rounded-lg">
-          <Image src={process.env.NEXT_PUBLIC_STRAPI_API_URL + news.image.url || "/placeholder.svg"} alt={news.image.alternativeText} fill className="object-cover" />
+          <Image src={news.image.url || "/placeholder.svg"} alt={news.image.alternativeText} fill className="object-cover" />
         </div>
 
         <div className="prose prose-lg max-w-none dark:prose-invert">

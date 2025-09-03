@@ -107,7 +107,7 @@ export default async function Home() {
             <AnimateIn direction="right" delay={200}>
               <div className="relative aspect-video overflow-hidden rounded-lg shadow-xl gradient-border hover-scale">
                 <Image
-                  src={process.env.NEXT_PUBLIC_STRAPI_API_URL + featuredProject.images[0].url || "/placeholder.svg"}
+                  src={featuredProject.images[0].url || "/placeholder.svg"}
                   alt={featuredProject.title}
                   fill
                   className="object-cover transition-transform duration-500 hover:scale-105"

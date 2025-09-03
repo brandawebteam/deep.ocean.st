@@ -151,7 +151,7 @@ export default function ProjectPreview({projects} : ProjectsCarouselProps) {
               {project.images.map((image, index) => (
                 <Image
                   key={index}
-                  src={process.env.NEXT_PUBLIC_STRAPI_API_URL + image.url || "/placeholder.svg"}
+                  src={image.url || "/placeholder.svg"}
                   alt={`${image.alternativeText} - Image ${index + 1}`}
                   fill
                   className={`object-cover transition-all duration-500 ${
