@@ -489,6 +489,7 @@ export interface ApiCareersPageCareersPage extends Struct.SingleTypeSchema {
 export interface ApiCookiesPolicyCookiesPolicy extends Struct.SingleTypeSchema {
   collectionName: 'cookies_policies';
   info: {
+    description: '';
     displayName: 'Cookies-policy';
     pluralName: 'cookies-policies';
     singularName: 'cookies-policy';
@@ -497,7 +498,7 @@ export interface ApiCookiesPolicyCookiesPolicy extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    content: Schema.Attribute.RichText;
+    content: Schema.Attribute.Blocks;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -656,6 +657,7 @@ export interface ApiNewsPageNewsPage extends Struct.CollectionTypeSchema {
 export interface ApiPrivacyPolicyPrivacyPolicy extends Struct.SingleTypeSchema {
   collectionName: 'privacy_policies';
   info: {
+    description: '';
     displayName: 'Privacy-policy';
     pluralName: 'privacy-policies';
     singularName: 'privacy-policy';
@@ -664,7 +666,7 @@ export interface ApiPrivacyPolicyPrivacyPolicy extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    content: Schema.Attribute.RichText;
+    content: Schema.Attribute.Blocks;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -731,6 +733,7 @@ export interface ApiTermAndConditionTermAndCondition
   extends Struct.SingleTypeSchema {
   collectionName: 'terms_and_conditions';
   info: {
+    description: '';
     displayName: 'TermsAndConditions';
     pluralName: 'terms-and-conditions';
     singularName: 'term-and-condition';
@@ -739,7 +742,7 @@ export interface ApiTermAndConditionTermAndCondition
     draftAndPublish: true;
   };
   attributes: {
-    content: Schema.Attribute.RichText;
+    content: Schema.Attribute.Blocks;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

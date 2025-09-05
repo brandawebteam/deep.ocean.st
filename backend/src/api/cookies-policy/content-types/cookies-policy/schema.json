@@ -4,7 +4,8 @@
   "info": {
     "singularName": "cookies-policy",
     "pluralName": "cookies-policies",
-    "displayName": "Cookies-policy"
+    "displayName": "Cookies-policy",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,7 +15,7 @@
       "type": "string"
     },
     "content": {
-      "type": "richtext"
+      "type": "blocks"
     }
   }
 }
